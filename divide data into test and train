@@ -1,0 +1,9 @@
+#Lets consider the name of dataset is budget
+
+n = nrow(budget)
+train = sample(1:n,size =round(.7 *n), replace = FALSE)
+
+train
+
+traindata = budget[train,]
+testdata = budget[-train,]
